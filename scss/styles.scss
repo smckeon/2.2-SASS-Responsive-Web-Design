@@ -1,3 +1,8 @@
+$grid-gutter-width: 10px;
+
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
 //variables
 
 $font-stack: helvetica, sans-serif;
@@ -8,32 +13,53 @@ $font-stack: helvetica, sans-serif;
 .wrapper{
   background: url('../skateboard-images/bg.jpg') no-repeat;
 }
-.container-fluid{
-  // overflow: hidden;
-}
 
 
 // layout
 
 // skate menu
-.top-menu{
-  color: #6fd750;
-
-  .btn-danger{
-    border-radius: 0px;
+.sk8-contain{
+  margin-bottom: 10px;
+}
+.ssbc{
+  button{
+    background-color: #B72631;
+    width: 100%;
   }
 }
 
-
+  .btn-danger{
+    border-radius: 0px;
+}
 
 // header images
+.banner {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+  border: 5px solid white;
+  padding: 0;
+  img{
+    max-width: 100%;
+  }
+}
 
+.peraltaimg{
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 100%;
+}
 
 
 // text boxes
-
-.tb1{
-  background-color: #ffffff;
+.post-contain{
+  margin-top: 20px;
+}
+.post{
+  padding: 10px;
+  background-color: white;
+  min-height: 320px;
 }
 
 
@@ -42,6 +68,27 @@ $font-stack: helvetica, sans-serif;
 
 
 // board block
+.board-contain{
+  margin-top: 20px;
+}
 .boards{
+  img{
+    margin-left: 43px;
+  }
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ffffff;
+
+}
+
+
+
+
+
+
+
+// examples
+
+.wrapper2{
+  background-color: green;
 }
