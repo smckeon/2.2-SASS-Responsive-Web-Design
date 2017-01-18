@@ -1,7 +1,47 @@
+//variables
+
+$font-stack: helvetica, sans-serif;
+
+
+
+// stuff
 .wrapper{
   background: url('../skateboard-images/bg.jpg') no-repeat;
 }
+.container-fluid{
+  // overflow: hidden;
+}
 
-.ssbc{
-  color: #56e687;
+
+// layout
+
+// skate menu
+.top-menu{
+  color: #6fd750;
+
+  .btn-danger{
+    border-radius: 0px;
+  }
+}
+
+
+
+// header images
+
+
+
+// text boxes
+
+.tb1{
+  background-color: #ffffff;
+}
+
+
+// 4 image block
+
+
+
+// board block
+.boards{
+  background-color: #ffffff;
 }

@@ -1,7 +1,15 @@
 .wrapper {
   background: url("../skateboard-images/bg.jpg") no-repeat; }
 
-.ssbc {
-  color: #56e687; }
+.top-menu {
+  color: #6fd750; }
+  .top-menu .btn-danger {
+    border-radius: 0px; }
+
+.tb1 {
+  background-color: #ffffff; }
+
+.boards {
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
