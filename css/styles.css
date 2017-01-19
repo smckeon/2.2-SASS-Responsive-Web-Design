@@ -5965,4 +5965,13 @@ button.close {
   .boards img {
     margin-left: 43px; }
 
+.fa2 i {
+  display: inline-block; }
+
+.info {
+  background-color: #FBFBFB; }
+
+.form button {
+  margin-top: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
