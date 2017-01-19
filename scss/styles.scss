@@ -19,31 +19,33 @@ $font-secondary: 'Open Sans', sans-serif;
   padding-left: 65px;
 }
 
-
 .subscribe{
   position: relative;
-  left: -25px;
+  left: -35px;
   font-family: $font-main;
   text-transform: uppercase;
   color: $white;
     i{
       color: #7584AE;
       margin-right: 8px;
-      padding: 8px 10px 8px 10px;
     }
 }
 
 .fa-facebook{
   background-color: #1722bd;
+  padding: 8px 15px 8px 15px;
 }
 .fa-rss{
   background-color: #e0ab0b;
+  padding: 8px 10px 8px 10px;
 }
 .fa-twitter{
   background-color: lightblue;
+  padding: 8px 10px 8px 10px;
 }
 .fa-youtube{
   background-color: #b51b1b;
+  padding: 8px 10px 8px 10px;
 }
 
 // skate menu
@@ -96,8 +98,9 @@ $font-secondary: 'Open Sans', sans-serif;
   min-height: 345px;
   text-transform: capitalize;
     a{
-      position: relative;
-      right: -100px;
+      position: absolute;
+      top: 300px;
+      left: 130px;
       font-weight: bolder;
       text-transform: uppercase;
       color: #B40000;
@@ -117,7 +120,7 @@ $font-secondary: 'Open Sans', sans-serif;
   background: url("../skateboard-images/sk8er-4.png");
   margin-bottom: 10px;
     h2{
-      top:60px;
+      top:55px;
       left:75px;
     }
 }
@@ -126,7 +129,7 @@ $font-secondary: 'Open Sans', sans-serif;
   background: url("../skateboard-images/sk8er-3.png");
   margin-right: 10px;
   h2{
-    top:60px;
+    top:55px;
     left:75px;
   }
 }
@@ -135,8 +138,8 @@ $font-secondary: 'Open Sans', sans-serif;
   background: url("../skateboard-images/sk8er-1.png");
   margin-right: 10px;
   h2{
-    top:75px;
-    left:10px;
+    top:80px;
+    left:210px;
   }
 }
 
@@ -186,7 +189,7 @@ $font-secondary: 'Open Sans', sans-serif;
     h2{
       font-family: $font-main;
       text-transform: uppercase;
-      position: relative;
+      position: absolute;
       text-align: center;
       color: $white;
       font-size: 38px;
@@ -214,14 +217,27 @@ $font-secondary: 'Open Sans', sans-serif;
 }
 
 // Contact Us
-.fa2 i{
-   display: inline-block;
-}
+// .fa2 i{
+//    display: inline-block;
+// }
 
 .info{
   background-color: #FBFBFB;
+    h6{
+      font-family: $font-secondary;
+      font-size: 22px;
+    }
+    p {
+      font-family: $font-secondary;
+    }
 }
 
 .form button{
   margin-top: 10px;
+}
+
+
+.contact{
+  margin-left: 60px;
+  margin-right: 60px;
 }
