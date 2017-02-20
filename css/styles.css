@@ -5970,6 +5970,8 @@ button.close {
     margin-left: 43px; }
 
 .info {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   background-color: #FBFBFB; }
   .info h6 {
     font-family: "Open Sans", sans-serif;
