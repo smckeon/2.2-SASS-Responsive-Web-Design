@@ -19,7 +19,14 @@ $font-secondary: 'Open Sans', sans-serif;
   padding-left: 65px;
 }
 
-.subscribe{
+.subscribe span {
+  @media screen and (max-width: 635px){
+     display: none;
+  }
+}
+
+
+.subscribe {
   position: relative;
   left: -35px;
   font-family: $font-main;
@@ -30,6 +37,12 @@ $font-secondary: 'Open Sans', sans-serif;
       margin-right: 8px;
     }
 }
+// .fa-2x {
+// @media screen and (max-width: 730px){
+//    height: 25px;
+//    width: 25px;
+//   }
+// }
 
 .fa-facebook{
   background-color: #1722bd;
@@ -63,16 +76,26 @@ $font-secondary: 'Open Sans', sans-serif;
 }
 
   .btn-danger{
-    border-radius: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 // header images
+
+.banner{
+    @media screen and (max-width: 730px){
+       max-width: 95%;
+  }
+}
+
 .banner {
   position: relative;
+  background-image: url('../skateboard-images/top-image.png');
   height: 380px;
   overflow: hidden;
   border: 5px solid $white;
   padding: 0;
+  box-shadow: 0 4px lighten(gray, 15%);
   img{
     max-width: 100%;
   }
@@ -85,18 +108,38 @@ $font-secondary: 'Open Sans', sans-serif;
   width: 100%;
 }
 
+.banner::before {
+  content: "";
+  background-image: url('../skateboard-images/grid.png');
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  // position: absolute;
+  // opacity: .35;
+}
+
 
 // text boxes
-.post-contain{
+.post-list{
+    @media screen and (max-width: 730px){
+       max-width: 95%;
+  }
+}
+
+.post-list{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .post{
   font-family: $font-secondary;
   padding: 20px;
   background-color: $white;
   min-height: 345px;
   text-transform: capitalize;
+  box-shadow: 0 4px lighten(gray, 15%);
+    // margin-top: 200px;
     a{
       position: absolute;
       top: 300px;
@@ -116,9 +159,15 @@ $font-secondary: 'Open Sans', sans-serif;
 
 
 // 4 image block
+
+
 .lance{
-  background: url("../skateboard-images/sk8er-4.png");
+  background: url('../skateboard-images/sk8er-4.png')no-repeat center center;
   margin-bottom: 10px;
+  height: 250px;
+  border: 4px solid $white;
+  // background-size: cover;
+  background-position: -55px 0px;
     h2{
       top:55px;
       left:75px;
@@ -128,6 +177,7 @@ $font-secondary: 'Open Sans', sans-serif;
 .rodney{
   background: url("../skateboard-images/sk8er-3.png");
   margin-right: 10px;
+  border: 4px solid $white;
   h2{
     top:55px;
     left:75px;
@@ -137,6 +187,7 @@ $font-secondary: 'Open Sans', sans-serif;
 .steve{
   background: url("../skateboard-images/sk8er-1.png");
   margin-right: 10px;
+  border: 4px solid $white;
   h2{
     top:80px;
     left:210px;
@@ -145,6 +196,7 @@ $font-secondary: 'Open Sans', sans-serif;
 
 .tommy{
   background: url("../skateboard-images/sk8er-2.png");
+  border: 4px solid $white;
   h2{
     top:185px;
     left:75px;
@@ -153,18 +205,16 @@ $font-secondary: 'Open Sans', sans-serif;
 
 .col-img{
   height: 250px;
-  // background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: -55px 0px;
-  border: 4px solid $white;
 }
 
 .col-img2{
   height: 250px;
-  // background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px;
-  border: 4px solid $white;
 }
 
 .col-img1{
@@ -172,7 +222,6 @@ $font-secondary: 'Open Sans', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px -75px;
-  border: 4px solid $white;
 }
 
 .img-col{
@@ -180,7 +229,12 @@ $font-secondary: 'Open Sans', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -460px 0px;
-  border: 4px solid $white;
+}
+
+.col-imgrow {
+  @media screen and (max-width: 790px){
+     display: none;
+  }
 }
 
 .col-imgrow{
@@ -190,7 +244,7 @@ $font-secondary: 'Open Sans', sans-serif;
       font-family: $font-main;
       text-transform: uppercase;
       position: absolute;
-      text-align: center;
+      // text-align: center;
       color: $white;
       font-size: 38px;
 
@@ -213,7 +267,7 @@ $font-secondary: 'Open Sans', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #ffffff;
-
+  box-shadow: 0 4px lighten(gray, 15%);
 }
 
 // Contact Us
@@ -222,9 +276,10 @@ $font-secondary: 'Open Sans', sans-serif;
 // }
 
 .info{
-  padding-bottom: 10px;
+  // padding-bottom:
   margin-bottom: 15px;
   background-color: #FBFBFB;
+  box-shadow: 0 4px lighten(gray, 15%);
     h6{
       font-family: $font-secondary;
       font-size: 22px;
