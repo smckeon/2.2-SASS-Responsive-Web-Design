@@ -12,6 +12,7 @@ $font-secondary: 'Open Sans', sans-serif;
 // stuff
 .wrapper{
   background: url('../skateboard-images/bg.jpg') no-repeat;
+  padding: 0 100px;
 }
 // layout
 .ellipsis{
@@ -122,8 +123,8 @@ $font-secondary: 'Open Sans', sans-serif;
 
 // text boxes
 .post-list{
-    @media screen and (max-width: 730px){
-       max-width: 95%;
+    @media screen and (max-width: 995px){
+       max-width: 70%;
   }
 }
 
@@ -133,6 +134,7 @@ $font-secondary: 'Open Sans', sans-serif;
 }
 
 .post{
+  position: relative;
   font-family: $font-secondary;
   padding: 20px;
   background-color: $white;
@@ -140,10 +142,10 @@ $font-secondary: 'Open Sans', sans-serif;
   text-transform: capitalize;
   box-shadow: 0 4px lighten(gray, 15%);
     // margin-top: 200px;
-    a{
-      position: absolute;
-      top: 300px;
-      left: 130px;
+    .readmore{
+      position: relative;
+      top: 4px;
+      left: 105px;
       font-weight: bolder;
       text-transform: uppercase;
       color: #B40000;
@@ -160,76 +162,94 @@ $font-secondary: 'Open Sans', sans-serif;
 
 // 4 image block
 
+.col-img {
+  height: 250px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  border: 2px solid #fff;
+  h2 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-15px);
+    text-align: center;
+
+  }
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: -55px 0px;
+}
+
+
+
 
 .lance{
-  background: url('../skateboard-images/sk8er-4.png')no-repeat center center;
-  margin-bottom: 10px;
-  height: 250px;
-  border: 4px solid $white;
-  // background-size: cover;
-  background-position: -55px 0px;
-    h2{
-      top:55px;
-      left:75px;
-    }
+  background: url('../skateboard-images/sk8er-4.png') no-repeat center right;
+  // margin-bottom: 10px;
+  // height: 250px;
+  // border: 4px solid $white;
+  // // background-size: cover;
+  // // background-position: -55px 0px;
+  //   h2{
+  //     top:55px;
+  //     left:75px;
+  //   }
 }
 
 .rodney{
-  background: url("../skateboard-images/sk8er-3.png");
-  margin-right: 10px;
-  border: 4px solid $white;
-  h2{
-    top:55px;
-    left:75px;
-  }
+  background: url("../skateboard-images/sk8er-3.png") no-repeat center left/cover;
+  // margin-right: 10px;
+  // border: 4px solid $white;
+  // h2{
+  //   top:55px;
+  //   left:75px;
+  // }
 }
 
 .steve{
-  background: url("../skateboard-images/sk8er-1.png");
-  margin-right: 10px;
-  border: 4px solid $white;
-  h2{
-    top:80px;
-    left:210px;
-  }
+  background: url("../skateboard-images/sk8er-1.png") no-repeat center right;
+  // margin-right: 10px;
+  // border: 4px solid $white;
+  // h2{
+  //   top:80px;
+  //   left:210px;
+  // }
 }
 
 .tommy{
-  background: url("../skateboard-images/sk8er-2.png");
-  border: 4px solid $white;
-  h2{
-    top:185px;
-    left:75px;
-  }
+  background: url("../skateboard-images/sk8er-2.png") no-repeat center right/cover;
+  height: 520px;
+  background-position-x: -475px;
+  // border: 4px solid $white;
+  // h2{
+  //   top:185px;
+  //   left:75px;
+  // }
 }
 
-.col-img{
-  height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -55px 0px;
-}
 
-.col-img2{
-  height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px;
-}
 
-.col-img1{
-  height: 230px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -75px;
-}
+// .col-img2{
+//   height: 250px;
+//   // background-size: cover;
+//   // background-repeat: no-repeat;
+//   // background-position: 0px;
+// }
 
-.img-col{
-  height: 490px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -460px 0px;
-}
+// .col-img1{
+//   height: 230px;
+//   // background-size: cover;
+//   // background-repeat: no-repeat;
+//   // background-position: 0px -75px;
+// }
+
+// .img-col{
+//   height: 490px;
+//   // background-size: cover;
+//   // background-repeat: no-repeat;
+//   // background-position: -460px 0px;
+// }
 
 .col-imgrow {
   @media screen and (max-width: 790px){
@@ -237,23 +257,23 @@ $font-secondary: 'Open Sans', sans-serif;
   }
 }
 
-.col-imgrow{
-  margin-left: 55px;
-  margin-right: 55px;
-    h2{
-      font-family: $font-main;
-      text-transform: uppercase;
-      position: absolute;
-      // text-align: center;
-      color: $white;
-      font-size: 38px;
-
-    }
-}
-
-.lance h2, .rodney h2, .tommy h2{
-  width: 210px;
-}
+// .col-imgrow{
+//   margin-left: 55px;
+//   margin-right: 55px;
+//     h2{
+//       font-family: $font-main;
+//       text-transform: uppercase;
+//       position: absolute;
+//       // text-align: center;
+//       color: $white;
+//       font-size: 38px;
+//
+//     }
+// }
+//
+// .lance h2, .rodney h2, .tommy h2{
+//   width: 210px;
+// }
 
 // board block
 .board-contain{
