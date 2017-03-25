@@ -5810,17 +5810,27 @@ button.close {
   background: url("../skateboard-images/bg.jpg") no-repeat;
   padding: 0 100px; }
 
+@media screen and (max-width: 401px) {
+  .view-change {
+    padding: 0 0px; } }
+  @media screen and (max-width: 401px) and (max-width: 401px) {
+    .view-change .steve {
+      background: url("../skateboard-images/sk8er-1.png") no-repeat center; } }
+
 .ellipsis {
+  position: relative;
   display: inline-block;
-  padding-left: 65px; }
+  padding-left: 55px; }
 
 @media screen and (max-width: 635px) {
   .subscribe span {
     display: none; } }
 
+@media screen and (max-width: 635px) {
+  .ellipsis {
+    display: none; } }
+
 .subscribe {
-  position: relative;
-  left: -35px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #ffffff; }
@@ -5858,9 +5868,9 @@ button.close {
   border-radius: 5px;
   margin-bottom: 10px; }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 401px) {
   .banner {
-    max-width: 95%; } }
+    max-width: 100%; } }
 
 .banner {
   position: relative;
@@ -5879,6 +5889,10 @@ button.close {
   left: 30px;
   width: 100%; }
 
+@media screen and (max-width: 401px) {
+  .peraltaimg {
+    max-width: 85%; } }
+
 .banner::before {
   content: "";
   background-image: url("../skateboard-images/grid.png"); }
@@ -5888,6 +5902,7 @@ button.close {
     max-width: 70%; } }
 
 .post-list {
+  height: 360px;
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -5907,7 +5922,12 @@ button.close {
     text-transform: uppercase;
     color: #B40000; }
 
+@media screen and (max-width: 405px) {
+  .post {
+    width: 405px; } }
+
 .article {
+  position: relative;
   margin-top: 10px; }
 
 .date span {
@@ -5930,7 +5950,8 @@ button.close {
   background: url("../skateboard-images/sk8er-3.png") no-repeat center left/cover; }
 
 .steve {
-  background: url("../skateboard-images/sk8er-1.png") no-repeat center right; }
+  background: url("../skateboard-images/sk8er-1.png") no-repeat center right;
+  margin-top: 20px; }
 
 .tommy {
   background: url("../skateboard-images/sk8er-2.png") no-repeat center right/cover;
@@ -5951,7 +5972,7 @@ button.close {
   background-color: #ffffff;
   box-shadow: 0 4px #a6a6a6; }
   .boards img {
-    margin-left: 43px; }
+    margin-left: 38px; }
 
 .info {
   margin-bottom: 15px;
